@@ -1,0 +1,20 @@
+{
+    "name": "lemberg/draft",
+    "description": "Draft handcrafted Drupal",
+    "type": "drupal-profile",
+    "license": "GPL-2.0+",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "drupal/devel": "^1.0"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "config": {
+        "bin-dir": "bin/"
+    }
+}
