@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+id: develop
+label: Develop
+folder: ../config/develop
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

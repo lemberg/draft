@@ -13,6 +13,8 @@ dependencies:
   # contrib
   - admin_toolbar
   - adminimal_admin_toolbar
+  - config_filter
+  - config_split
 
 themes:
   - adminimal_theme
