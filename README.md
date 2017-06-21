@@ -11,3 +11,7 @@ Just run this command:
 ```
 $ composer create-project lemberg/draft-project my_awesome_project
 ```
+
+## Changelog
+
+Changelog can be found here [CHANGELOG.md](CHANGELOG.md)
