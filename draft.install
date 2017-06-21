@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * Enables Administration links access filter module.
+ */
+function draft_update_8101(&$sandbox = NULL) {
+  \Drupal::service('module_installer')->install(['admin_links_access_filter']);
+}

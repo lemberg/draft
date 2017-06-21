@@ -6,12 +6,15 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require-dev": {
-        "drupal/devel": "^1.0"
+        "drupal/console": "^1.0",
+        "drupal/devel": "^1.0",
+        "drush/drush": "^8.1"
     },
     "require": {
+        "drupal/admin_links_access_filter": "^1.0",
         "drupal/admin_toolbar": "^1.0",
-        "drupal/adminimal_theme": "^1.0",
-        "drupal/adminimal_admin_toolbar": "^1.0"
+        "drupal/adminimal_admin_toolbar": "^1.0",
+        "drupal/adminimal_theme": "^1.0"
     },
     "repositories": [
         {
