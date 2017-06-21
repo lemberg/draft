@@ -9,13 +9,13 @@ distribution:
 # Required modules
 dependencies:
   # core
-  - block
-  - dynamic_page_cache
-  - config
-  - page_cache
+  - drupal:block
+  - drupal:dynamic_page_cache
+  - drupal:config
+  - drupal:page_cache
   # contrib
-  - admin_toolbar
-  - adminimal_admin_toolbar
+  - admin_toolbar:admin_toolbar
+  - adminimal_admin_toolbar:adminimal_admin_toolbar
 
 themes:
-  - adminimal_theme
+  - adminimal_theme:adminimal_theme
