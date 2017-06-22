@@ -12,6 +12,10 @@ Just run this command:
 $ composer create-project lemberg/draft-project my_awesome_project
 ```
 
+## Docs
+
+Everybody loves documentation. We do too! [Check this out](docs).
+
 ## Changelog
 
 Changelog can be found here [CHANGELOG.md](CHANGELOG.md)

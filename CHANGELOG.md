@@ -1,10 +1,13 @@
 ## Draft 1.x.x
 
+- Added empty Develop configuration split
 - Added dependencies on:
-    * Administration links access filter (admin_links_access_filter:admin_links_access_filter)
+    * Administration Links Access Filter (admin_links_access_filter:admin_links_access_filter)
+    * Configuration Split (config_split:config_split)
 - Added vendor libraries:
-    * Administration links access filter (drupal/admin_links_access_filter: **^1.0**)
-    * Drupal Console (drupal/console: **^1.0**)
+    * Administration Links Access Filter (drupal/admin_links_access_filter: **^1.0**)
+    * Configuration Split (drupal/admin_links_access_filter: **^1.0**)
+    * Drupal Console (drupal/config_split: **^1.0**)
     * Drush (drush/drush: **^8.1**)
 - Make sure that all dependencies are prefixed with the project name
 - Added this file

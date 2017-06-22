@@ -1,8 +1,61 @@
 <?php
 
+use Drupal\Core\Config\FileStorage;
+
 /**
- * Enables Administration links access filter module.
+ * Implements hook_install().
+ */
+function draft_install() {
+  $config = _draft_read_develop_config_split();
+  _draft_prepare_develop_config_split_directory($config);
+}
+
+/**
+ * Installs Administration Links Access Filter module.
  */
 function draft_update_8101(&$sandbox = NULL) {
   \Drupal::service('module_installer')->install(['admin_links_access_filter']);
+}
+
+/**
+ * Installs Configuration Split module and Develop configuration split.
+ */
+function draft_update_8102(&$sandbox = NULL) {
+  if (!Drupal::moduleHandler()->moduleExists('config_split')) {
+    \Drupal::service('module_installer')->install(['config_split']);
+
+    $config = _draft_read_develop_config_split();
+    _draft_prepare_develop_config_split_directory($config);
+
+    /** @var \Drupal\Core\Config\CachedStorage $config_storage */
+    $config_storage = \Drupal::service('config.storage');
+    $config_storage->write('config_split.config_split.develop', $config);
+  }
+}
+
+/**
+ * Reads Develop configuration split configuration data.
+ *
+ * @return array
+ *   Develop configuration split configuration data.
+ */
+function _draft_read_develop_config_split() {
+  $config_path = drupal_get_path('profile', 'draft') . '/config/install';
+  $source = new FileStorage($config_path);
+  return $source->read('config_split.config_split.develop');
+}
+
+/**
+ * Prepares Develop configuration split export directory.
+ *
+ * @param array $config
+ *   Develop configuration split configuration data.
+ *
+ * @return bool
+ *   TRUE if Develop configuration split export directory exists and is
+ *   writable, FALSE otherwise.
+ */
+function _draft_prepare_develop_config_split_directory(array $config) {
+  $directory = \Drupal::root() . '/' . $config['folder'];
+  return file_prepare_directory($directory, FILE_CREATE_DIRECTORY | FILE_MODIFY_PERMISSIONS);
 }
