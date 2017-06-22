@@ -1,4 +1,4 @@
-## Draft 1.x.x
+## Draft 1.2.0, 2017-06-22
 
 - Added empty Develop configuration split
 - Added dependencies on:
