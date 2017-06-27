@@ -2,22 +2,26 @@ name: Draft
 core: 8.x
 type: profile
 description: Draft handcrafted Drupal.
-version: 8.x-1.x.x
+version: 8.x-1.2.1
 distribution:
   name: Draft
 
 # Required modules
 dependencies:
-  # core
+  # Core
   - drupal:block
   - drupal:dynamic_page_cache
   - drupal:config
   - drupal:page_cache
-  # contrib
+  # Contrib
   - admin_links_access_filter:admin_links_access_filter
   - admin_toolbar:admin_toolbar
   - adminimal_admin_toolbar:adminimal_admin_toolbar
   - config_split:config_split
+  # @todo Indirect dependencies added here due to the issue in Drupal core @link
+  # https://www.drupal.org/node/1253774 @endlink. Remove when the corresponding
+  # issue will be committed.
+  - config_filter:config_filter
 
 themes:
-  - adminimal_theme:adminimal_theme
+  - adminimal_theme

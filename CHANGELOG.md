@@ -1,3 +1,7 @@
+## Draft 1.2.1, 2017-06-27
+
+- Fixed issue with prefixed dependencies for profile, see [this issue on drupal.org](https://www.drupal.org/node/2855026).
+
 ## Draft 1.2.0, 2017-06-22
 
 - Added empty Develop configuration split
