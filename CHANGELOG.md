@@ -1,4 +1,4 @@
-## Draft 1.2.1, 2017-06-27
+## Draft 1.2.1, 2017-06-28
 
 - Add integration with Travis CI
 - Fixed issue with prefixed dependencies for profile, see [this issue on drupal.org](https://www.drupal.org/node/2855026).
