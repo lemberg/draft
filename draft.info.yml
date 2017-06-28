@@ -2,7 +2,7 @@ name: Draft
 core: 8.x
 type: profile
 description: Draft handcrafted Drupal.
-version: 8.x-1.2.1
+version: 8.x-1.x.x
 distribution:
   name: Draft
 
