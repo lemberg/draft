@@ -5,11 +5,6 @@
     "license": "GPL-2.0+",
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "require-dev": {
-        "drupal/console": "^1.0",
-        "drupal/devel": "^1.0",
-        "drush/drush": "^8.1"
-    },
     "require": {
         "drupal/admin_toolbar": "^1.21",
         "drupal/adminimal_admin_toolbar": "^1.0",
