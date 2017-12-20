@@ -34,6 +34,15 @@ function draft_update_8102(&$sandbox = NULL) {
 }
 
 /**
+ * Replace Administration Links Access Filter module with one bundled with Admin
+ * Toolbar module as of version 1.21.0.
+ */
+function draft_update_8103(&$sandbox = NULL) {
+  \Drupal::service('module_installer')->uninstall(['admin_links_access_filter']);
+  \Drupal::service('module_installer')->install(['admin_toolbar_links_access_filter']);
+}
+
+/**
  * Reads Develop configuration split configuration data.
  *
  * @return array

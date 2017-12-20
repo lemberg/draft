@@ -14,8 +14,8 @@ dependencies:
   - drupal:config
   - drupal:page_cache
   # Contrib
-  - admin_links_access_filter:admin_links_access_filter
   - admin_toolbar:admin_toolbar
+  - admin_toolbar:admin_toolbar_links_access_filter
   - adminimal_admin_toolbar:adminimal_admin_toolbar
   - config_split:config_split
   # @todo Indirect dependencies added here due to the issue in Drupal core @link

@@ -1,5 +1,10 @@
 ## Draft 1.x.x
 
+- Disable anonymous account creation by default
+- Removed *Administration Links Access Filter* module as it has been [merged into Admin Toolbar as a submodule](https://www.drupal.org/project/admin_toolbar/issues/2919346) as of version 1.21.0
+- Updated vendor libraries:
+    * Admin Toolbar (drupal/admin_toolbar: **^1.21**)
+
 ## Draft 1.2.1, 2017-06-28
 
 - Add integration with Travis CI

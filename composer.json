@@ -11,8 +11,7 @@
         "drush/drush": "^8.1"
     },
     "require": {
-        "drupal/admin_links_access_filter": "^1.0",
-        "drupal/admin_toolbar": "^1.0",
+        "drupal/admin_toolbar": "^1.21",
         "drupal/adminimal_admin_toolbar": "^1.0",
         "drupal/adminimal_theme": "^1.0",
         "drupal/config_split": "^1.0"
