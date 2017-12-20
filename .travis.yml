@@ -25,7 +25,7 @@ install:
   # Composer install should fail on bad patches.
   - export COMPOSER_EXIT_ON_PATCH_FAILURE=1
   # Create the MySQL database and add a user for testing.
-  - mysql -u root -e "CREATE DATABASE drupal; CREATE USER 'draft'@'localhost' IDENTIFIED BY 'draft'; GRANT ALL ON drupal.* TO 'draft'@'localhost';"
+  - mysql -u root -e "CREATE DATABASE drupal; CREATE USER 'drupal'@'localhost' IDENTIFIED BY 'drupal'; GRANT ALL ON drupal.* TO 'drupal'@'localhost';"
   # Tweak PHP configuration.
   - echo 'sendmail_path = /bin/true' >> drupal.php.ini;
   - phpenv config-add drupal.php.ini
@@ -39,7 +39,7 @@ install:
   - ln -s $(readlink -e $TRAVIS_BUILD_DIR) docroot/profiles/draft
 
 script:
-  - drush site-install --db-url=mysql://draft:draft@localhost/drupal --account-name=admin --account-pass=admin -r ./docroot --yes
+  - drush site-install --db-url=mysql://drupal:drupal@localhost/drupal --account-name=admin --account-pass=admin -r ./docroot --yes
 
 matrix:
   fast_finish: true
