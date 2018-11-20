@@ -37,12 +37,6 @@
             "include": [
                 "lemberg/draft/composer.json"
             ]
-        },
-        "patches": {
-            "drupal/core": {
-                "Installation profiles do not support project:module format for dependencies": "https://www.drupal.org/files/issues/2855026-17.patch"
-            }
-        },
-        "enable-patching": true
+        }
     }
 }
