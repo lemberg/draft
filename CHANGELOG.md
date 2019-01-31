@@ -1,5 +1,5 @@
 ## Draft 1.x.x
-
+- Enable basic core modules and add Views UI and Field UI to the config split settings
 - Disable anonymous account creation by default
 - Removed *Administration Links Access Filter* module as it has been [merged into Admin Toolbar as a submodule](https://www.drupal.org/project/admin_toolbar/issues/2919346) as of version 1.21.0
 - Updated vendor libraries:
