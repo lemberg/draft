@@ -3,8 +3,11 @@ status: true
 dependencies: {  }
 id: develop
 label: Develop
+description: ''
 folder: ../config/develop
-module: {  }
+module:
+  field_ui: 0
+  views_ui: 0
 theme: {  }
 blacklist: {  }
 graylist: {  }
