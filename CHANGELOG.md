@@ -1,5 +1,5 @@
 ## Draft 2.x.x
-- [Issue 7](https://github.com/lemberg/draft/issues/7) - Enable basic core modules and add Views UI and Field UI to the config split settings
+- [Issue 7](https://github.com/lemberg/draft/issues/7) - Enable basic core modules(Custom block, CKEditor, Config, Contextual links, Dynamic page cache, Link, Media, Menu UI, Node, Options, Page cache, Path, Views) and add development modules (Views UI, Field UI, Update, Dblog) to the config split settings.
 - Disable anonymous account creation by default
 - Removed *Administration Links Access Filter* module as it has been [merged into Admin Toolbar as a submodule](https://www.drupal.org/project/admin_toolbar/issues/2919346) as of version 1.21.0
 - Updated vendor libraries:
