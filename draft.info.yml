@@ -9,9 +9,10 @@ distribution:
 # Required modules
 dependencies:
   # Core
-  - drupal:block
+  - drupal:block_content
   - drupal:ckeditor
   - drupal:config
+  - drupal:contextual
   - drupal:dynamic_page_cache
   - drupal:link
   - drupal:media
