@@ -1,5 +1,6 @@
 ## Draft 2.x.x
 - [Issue 7](https://github.com/lemberg/draft/issues/7) - Enable basic core modules(Custom block, CKEditor, Config, Contextual links, Dynamic page cache, Link, Media, Menu UI, Node, Options, Page cache, Path, Views) and add development modules (Views UI, Field UI, Update, Dblog) to the config split settings.
+- Updated composer.json to remove a drupal-support_project_module_format_dependencies-2855026-49.patch because it's already merged in the drupal core.
 - Disable anonymous account creation by default
 - Removed *Administration Links Access Filter* module as it has been [merged into Admin Toolbar as a submodule](https://www.drupal.org/project/admin_toolbar/issues/2919346) as of version 1.21.0
 - Updated vendor libraries:
