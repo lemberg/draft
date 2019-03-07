@@ -1,6 +1,9 @@
 dist: xenial
 language: php
 
+services:
+  - mysql
+
 cache:
   apt: true
   directories:
