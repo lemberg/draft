@@ -8,9 +8,8 @@ cache:
     - "$HOME/.composer/cache"
     - "$HOME/.drush/cache"
 php:
-  - 5.6
-  - 7.0
   - 7.1
+  - 7.2
 
 before_install:
   - phpenv config-rm xdebug.ini
