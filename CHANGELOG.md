@@ -1,4 +1,8 @@
 ## Draft 2.x.x
+- [Issue 17](https://github.com/lemberg/draft/issues/17) - Update Travis CI configuration:
+    * Remove PHP 5.6 and PHP 7.0, add PHP 7.2
+    * Upgrade to Xenial environment
+    * Improve composer patching by replacing environment variable with configuration within composer.json
 - [Issue 7](https://github.com/lemberg/draft/issues/7) - Enable basic core modules(Custom block, CKEditor, Config, Contextual links, Dynamic page cache, Link, Media, Menu UI, Node, Options, Page cache, Path, Views) and add development modules (Views UI, Field UI, Update, Dblog) to the config split settings.
 - Updated composer.json to remove a drupal-support_project_module_format_dependencies-2855026-49.patch because it's already merged in the drupal core.
 - Disable anonymous account creation by default
