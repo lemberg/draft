@@ -38,9 +38,7 @@
             "include": [
                 "lemberg/draft/composer.json"
             ]
-        }
-    },
-    "extra": {
+        },
         "composer-exit-on-patch-failure": true,
         "patchLevel": {
             "drupal/core": "-p2"
