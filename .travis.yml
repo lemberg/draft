@@ -1,5 +1,4 @@
-sudo: required
-dist: trusty
+dist: xenial
 language: php
 
 cache:
@@ -36,7 +35,7 @@ install:
   - ln -s $(readlink -e $TRAVIS_BUILD_DIR) docroot/profiles/draft
 
 script:
-  - drush site-install --db-url=mysql://drupal:drupal@localhost/drupal --account-name=admin --account-pass=admin -r ./docroot --yes
+  - drush site-install --db-url=mysql://drupal:drupal@localhost/drupal --account-name=admin --account-pass=admin --root ./docroot --yes
 
 matrix:
   fast_finish: true
