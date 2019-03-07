@@ -38,7 +38,7 @@ install:
   - ln -s $(readlink -e $TRAVIS_BUILD_DIR) docroot/profiles/draft
 
 script:
-  - drush site:install draft --db-url mysql://drupal:drupal@localhost/drupal --account-name admin --account-pass admin --root ./docroot --verbose --yes
+  - drush site:install draft --db-url mysql://drupal:drupal@localhost/drupal --account-name admin --account-pass admin --verbose --yes
 
 matrix:
   fast_finish: true
