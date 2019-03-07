@@ -1,6 +1,9 @@
+uuid: fc114a6e-5722-461c-a0f4-3cb2e83cf5e4
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: pmEzS5gkJ4wdfj2D-XojYSfAANvryIYT0Hw2GtMrx14
 id: image
 label: Image
 description: ''

@@ -1,4 +1,5 @@
 ## Draft 2.x.x
+- [Issue 6](https://github.com/lemberg/draft/issues/6) - Add media bundles for Image and File since we use it on each site. Enable Media Library module
 - [Issue 8](https://github.com/lemberg/draft/issues/8) - Add Twig Field Value and Twig Tweak modules
 - [Issue 20](https://github.com/lemberg/draft/issues/20) - Enable development modules (Devel and Kint)
 - [Issue 9](https://github.com/lemberg/draft/issues/9) - Add Paragraphs module
