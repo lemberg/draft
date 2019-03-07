@@ -1,6 +1,8 @@
-sudo: required
-dist: trusty
+dist: xenial
 language: php
+
+services:
+  - mysql
 
 cache:
   apt: true
@@ -8,9 +10,8 @@ cache:
     - "$HOME/.composer/cache"
     - "$HOME/.drush/cache"
 php:
-  - 5.6
-  - 7.0
   - 7.1
+  - 7.2
 
 before_install:
   - phpenv config-rm xdebug.ini
@@ -22,8 +23,6 @@ install:
   - cd -
   # Copy Travis composer.json to the build directory.
   - cp ./lemberg/draft/.travis.composer.json ./composer.json
-  # Composer install should fail on bad patches.
-  - export COMPOSER_EXIT_ON_PATCH_FAILURE=1
   # Create the MySQL database and add a user for testing.
   - mysql -u root -e "CREATE DATABASE drupal; CREATE USER 'drupal'@'localhost' IDENTIFIED BY 'drupal'; GRANT ALL ON drupal.* TO 'drupal'@'localhost';"
   # Tweak PHP configuration.
@@ -39,7 +38,7 @@ install:
   - ln -s $(readlink -e $TRAVIS_BUILD_DIR) docroot/profiles/draft
 
 script:
-  - drush site-install --db-url=mysql://drupal:drupal@localhost/drupal --account-name=admin --account-pass=admin -r ./docroot --yes
+  - drush site:install draft --db-url mysql://drupal:drupal@localhost/drupal --account-name admin --account-pass admin --verbose --yes
 
 matrix:
   fast_finish: true
