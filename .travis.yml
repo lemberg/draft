@@ -21,8 +21,6 @@ install:
   - cd -
   # Copy Travis composer.json to the build directory.
   - cp ./lemberg/draft/.travis.composer.json ./composer.json
-  # Composer install should fail on bad patches.
-  - export COMPOSER_EXIT_ON_PATCH_FAILURE=1
   # Create the MySQL database and add a user for testing.
   - mysql -u root -e "CREATE DATABASE drupal; CREATE USER 'drupal'@'localhost' IDENTIFIED BY 'drupal'; GRANT ALL ON drupal.* TO 'drupal'@'localhost';"
   # Tweak PHP configuration.
