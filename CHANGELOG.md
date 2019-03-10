@@ -1,4 +1,5 @@
 ## Draft 2.x.x
+- [Issue 9](https://github.com/lemberg/draft/issues/9) - Add Paragraphs module.
 - [Issue 17](https://github.com/lemberg/draft/issues/17) - Update Travis CI configuration:
     * Remove PHP 5.6 and PHP 7.0, add PHP 7.2
     * Upgrade to Xenial environment

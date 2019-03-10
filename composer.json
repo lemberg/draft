@@ -10,7 +10,8 @@
         "drupal/admin_toolbar": "^1.21",
         "drupal/adminimal_admin_toolbar": "^1.0",
         "drupal/adminimal_theme": "^1.0",
-        "drupal/config_split": "^1.0"
+        "drupal/config_split": "^1.0",
+        "drupal/paragraphs": "^1.6"
     },
     "repositories": [
         {
