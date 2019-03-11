@@ -44,13 +44,6 @@ function draft_update_8103(&$sandbox = NULL) {
 }
 
 /**
- * Enable Paragraphs module.
- */
-function draft_update_8601(&$sandbox = NULL) {
-  \Drupal::service('module_installer')->uninstall(['paragraphs']);
-}
-
-/**
  * Reads Develop configuration split configuration data.
  *
  * @return array
