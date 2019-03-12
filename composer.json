@@ -13,6 +13,9 @@
         "drupal/config_split": "^1.0",
         "drupal/paragraphs": "^1.6"
     },
+    "require-dev": {
+        "drupal/devel": "^2.0"
+    },
     "repositories": [
         {
             "type": "composer",
