@@ -9,18 +9,28 @@ distribution:
 # Required modules
 dependencies:
   # Core
+  - drupal:block
+  - drupal:breakpoint
   - drupal:block_content
   - drupal:ckeditor
   - drupal:config
   - drupal:contextual
   - drupal:dynamic_page_cache
+  - drupal:editor
+  - drupal:field
+  - drupal:file
+  - drupal:filter
+  - drupal:image
   - drupal:link
   - drupal:media
+  - drupal:menu_link_content
   - drupal:menu_ui
   - drupal:node
   - drupal:options
   - drupal:page_cache
   - drupal:path
+  - drupal:text
+  - drupal:toolbar
   - drupal:views
   # Contrib
   - admin_toolbar:admin_toolbar
