@@ -1,8 +1,9 @@
 ## Draft 2.x.x
-- [Issue 6](https://github.com/lemberg/draft/issues/6) - Add media bundles for Icon. Enable Svg Image module
-- [Issue 6](https://github.com/lemberg/draft/issues/6) - Add media bundles for Image and File since we use it on each site. Enable Media Library module.
 - [Issue 8](https://github.com/lemberg/draft/issues/8) - Add Twig Field Value and Twig Tweak modules
 - [Issue 20](https://github.com/lemberg/draft/issues/20) - Enable development modules (Devel and Kint)
+- [Issue 9](https://github.com/lemberg/draft/issues/9) - Add Paragraphs module
+- Added media bundles for ICON. Enable Svg Image module
+- [Issue 6](https://github.com/lemberg/draft/issues/6) - Add media bundles for Image and File since we use it on each site. Enable Media Library module
 - [Issue 9](https://github.com/lemberg/draft/issues/9) - Add Paragraphs module
 - [Issue 17](https://github.com/lemberg/draft/issues/17) - Update Travis CI configuration:
     * Remove PHP 5.6 and PHP 7.0, add PHP 7.2
