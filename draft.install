@@ -81,6 +81,7 @@ function _draft_prepare_develop_config_split_directory(array $config) {
  */
 function _draft_install_contrib_modules() {
   $modules = [
+    'svg_image',
     'paragraphs',
     'twig_field_value',
     'twig_tweak',

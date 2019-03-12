@@ -1,9 +1,8 @@
-uuid: fc114a6e-5722-461c-a0f4-3cb2e83cf5e4
 langcode: en
 status: true
 dependencies: {  }
-id: image
-label: Image
+id: icon
+label: Icon
 description: ''
 source: image
 queue_thumbnail_downloads: false
