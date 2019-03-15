@@ -7,7 +7,9 @@ description: ''
 folder: ../config/develop
 module:
   dblog: 0
+  devel: 0
   field_ui: 0
+  kint: 0
   update: 0
   views_ui: 0
 theme: {  }
