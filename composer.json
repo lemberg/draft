@@ -12,7 +12,8 @@
         "drupal/adminimal_theme": "^1.0",
         "drupal/config_split": "^1.0",
         "drupal/twig_field_value": "^1.2",
-        "drupal/paragraphs": "^1.6"
+        "drupal/paragraphs": "^1.6",
+        "drupal/twig_tweak": "^2.1"
     },
     "require-dev": {
         "drupal/devel": "^2.0"
