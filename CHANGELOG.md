@@ -1,4 +1,6 @@
 ## Draft 2.x.x
+- [Issue 8](https://github.com/lemberg/draft/issues/8) - Add Twig Field Value and Twig Tweak modules
+- [Issue 20](https://github.com/lemberg/draft/issues/20) - Enable development modules (Devel and Kint)
 - [Issue 9](https://github.com/lemberg/draft/issues/9) - Add Paragraphs module
 - [Issue 17](https://github.com/lemberg/draft/issues/17) - Update Travis CI configuration:
     * Remove PHP 5.6 and PHP 7.0, add PHP 7.2

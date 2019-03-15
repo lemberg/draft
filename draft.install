@@ -1,6 +1,7 @@
 <?php
 
 use Drupal\Core\Config\FileStorage;
+use Drupal\user\Entity\User;
 
 /**
  * Implements hook_install().
@@ -9,6 +10,11 @@ function draft_install() {
   $config = _draft_read_develop_config_split();
   _draft_prepare_develop_config_split_directory($config);
   _draft_install_contrib_modules();
+
+  // Assign user 1 the "administrator" role.
+  $user = User::load(1);
+  $user->roles[] = 'administrator';
+  $user->save();
 }
 
 /**
@@ -76,6 +82,8 @@ function _draft_prepare_develop_config_split_directory(array $config) {
 function _draft_install_contrib_modules() {
   $modules = [
     'paragraphs',
+    'twig_field_value',
+    'twig_tweak',
   ];
   \Drupal::service('module_installer')->install($modules);
 }
