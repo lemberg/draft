@@ -43,6 +43,9 @@ dependencies:
   # https://www.drupal.org/node/1253774 @endlink. Remove when the corresponding
   # issue will be committed.
   - config_filter:config_filter
-
+install:
+  - paragraphs
+  - twig_field_value
+  - twig_tweak
 themes:
   - adminimal_theme

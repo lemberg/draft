@@ -9,7 +9,6 @@ use Drupal\user\Entity\User;
 function draft_install() {
   $config = _draft_read_develop_config_split();
   _draft_prepare_develop_config_split_directory($config);
-  _draft_install_contrib_modules();
 
   // Assign user 1 the "administrator" role.
   $user = User::load(1);
@@ -74,17 +73,4 @@ function _draft_read_develop_config_split() {
 function _draft_prepare_develop_config_split_directory(array $config) {
   $directory = \Drupal::root() . '/' . $config['folder'];
   return file_prepare_directory($directory, FILE_CREATE_DIRECTORY | FILE_MODIFY_PERMISSIONS);
-}
-
-/**
- * Helper function for installing contrib modules.
- */
-function _draft_install_contrib_modules() {
-  $modules = [
-    'svg_image',
-    'paragraphs',
-    'twig_field_value',
-    'twig_tweak',
-  ];
-  \Drupal::service('module_installer')->install($modules);
 }
