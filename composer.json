@@ -11,6 +11,7 @@
         "drupal/adminimal_admin_toolbar": "^1.0",
         "drupal/adminimal_theme": "^1.0",
         "drupal/config_split": "^1.0",
+        "drupal/environment_indicator": "^3.6",
         "drupal/paragraphs": "^1.6",
         "drupal/twig_field_value": "^1.2",
         "drupal/twig_tweak": "^2.1"
