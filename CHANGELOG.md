@@ -1,5 +1,5 @@
 ## Draft 2.x.x
-- [Issue 34](https://github.com/lemberg/draft/issues/35) - Add Paragraphs browser module
+- [Issue 34](https://github.com/lemberg/draft/issues/34) - Add Paragraphs browser module
 - [Issue 35](https://github.com/lemberg/draft/issues/35) - Profile can install modules via built-in install property
 - [Issue 8](https://github.com/lemberg/draft/issues/8) - Add Twig Field Value and Twig Tweak modules
 - [Issue 20](https://github.com/lemberg/draft/issues/20) - Enable development modules (Devel and Kint)
