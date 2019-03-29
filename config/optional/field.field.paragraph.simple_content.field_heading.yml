@@ -2,16 +2,16 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_title
+    - field.storage.paragraph.field_heading
     - paragraphs.paragraphs_type.simple_content
-id: paragraph.simple_content.field_title
-field_name: field_title
+id: paragraph.simple_content.field_heading
+field_name: field_heading
 entity_type: paragraph
 bundle: simple_content
-label: Title
+label: Heading
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

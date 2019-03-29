@@ -14,12 +14,12 @@ bundle: simple_content
 mode: preview
 content:
   field_body:
+    type: text_default
     weight: 1
+    region: content
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
-    region: content
   field_heading:
     weight: 0
     label: above
