@@ -4,13 +4,13 @@ dependencies: {  }
 id: content
 label: Content
 groups:
-  banner:
-    label: Banner
-    id: banner
-    weight: '1'
   compound:
     label: Compound
     id: compound
+    weight: '1'
+  banner:
+    label: Hero
+    id: hero
     weight: '2'
   layout:
     label: Layout
