@@ -3,7 +3,7 @@ status: true
 dependencies: {  }
 id: icon
 label: Icon
-description: ''
+description: 'Use local SVG and png icons for reusable media.'
 source: image
 queue_thumbnail_downloads: false
 new_revision: false
