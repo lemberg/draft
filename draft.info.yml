@@ -42,6 +42,8 @@ dependencies:
   # issue will be committed.
   - config_filter:config_filter
 install:
+  - allowed_formats
+  - field_group
   - paragraphs
   - twig_field_value
   - twig_tweak
