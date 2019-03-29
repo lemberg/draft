@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies: {  }
+id: content
+label: Content
+groups:
+  compound:
+    label: Compound
+    id: compound
+    weight: '1'
+  banner:
+    label: Hero
+    id: hero
+    weight: '2'
+  layout:
+    label: Layout
+    id: layout
+    weight: '3'
+  reference:
+    label: Reference
+    id: reference
+    weight: '4'
+  simple:
+    label: Simple
+    id: simple
+    weight: '5'
+map: {  }
