@@ -1,4 +1,5 @@
 ## Draft 2.x.x
+- [Issue 34](https://github.com/lemberg/draft/issues/34) - Add Paragraphs browser module
 - [Issue 32](https://github.com/lemberg/draft/issues/32) - Add default content types(Basic and Landing pages)
 - [Issue 33](https://github.com/lemberg/draft/issues/33) - Add Field group module
 - [Issue 30](https://github.com/lemberg/draft/issues/30) - Add Allowed Formats module

@@ -45,6 +45,7 @@ install:
   - allowed_formats
   - field_group
   - paragraphs
+  - paragraphs_browser
   - twig_field_value
   - twig_tweak
 themes:
