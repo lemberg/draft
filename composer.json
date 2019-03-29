@@ -12,6 +12,7 @@
         "drupal/adminimal_theme": "^1.0",
         "drupal/allowed_formats":  "^1.1",
         "drupal/config_split": "^1.0",
+        "drupal/field_group": "^1.0",
         "drupal/paragraphs": "^1.6",
         "drupal/twig_field_value": "^1.2",
         "drupal/twig_tweak": "^2.1"
