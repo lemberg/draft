@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.simple_content.field_body
+    - field.field.paragraph.simple_content.field_description
     - field.field.paragraph.simple_content.field_heading
     - paragraphs.paragraphs_type.simple_content
   module:
@@ -12,7 +12,7 @@ targetEntityType: paragraph
 bundle: simple_content
 mode: default
 content:
-  field_body:
+  field_description:
     type: text_textarea
     weight: 1
     region: content

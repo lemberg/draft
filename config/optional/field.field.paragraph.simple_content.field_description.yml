@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_body
+    - field.storage.paragraph.field_description
     - paragraphs.paragraphs_type.simple_content
   module:
     - allowed_formats
@@ -10,11 +10,11 @@ dependencies:
 third_party_settings:
   allowed_formats:
     plain_text: '0'
-id: paragraph.simple_content.field_body
-field_name: field_body
+id: paragraph.simple_content.field_description
+field_name: field_description
 entity_type: paragraph
 bundle: simple_content
-label: Body
+label: Description
 description: ''
 required: false
 translatable: false
