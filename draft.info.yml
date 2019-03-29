@@ -44,7 +44,11 @@ dependencies:
   # issue will be committed.
   - config_filter:config_filter
 install:
+  - allowed_formats
+  - environment_indicator
+  - field_group
   - paragraphs
+  - paragraphs_browser
   - svg_image
   - twig_field_value
   - twig_tweak
