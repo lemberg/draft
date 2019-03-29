@@ -4,7 +4,7 @@ dependencies:
   config:
     - core.entity_view_mode.paragraph.preview
     - field.field.paragraph.simple_content.field_body
-    - field.field.paragraph.simple_content.field_title
+    - field.field.paragraph.simple_content.field_heading
     - paragraphs.paragraphs_type.simple_content
   module:
     - text
@@ -20,7 +20,7 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
-  field_title:
+  field_heading:
     weight: 0
     label: above
     settings:
