@@ -43,6 +43,7 @@ dependencies:
   - config_filter:config_filter
 install:
   - allowed_formats
+  - environment_indicator
   - field_group
   - paragraphs
   - paragraphs_browser
