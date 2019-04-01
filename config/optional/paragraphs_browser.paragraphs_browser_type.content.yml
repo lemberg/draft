@@ -8,7 +8,7 @@ groups:
     label: Compound
     id: compound
     weight: '1'
-  banner:
+  hero:
     label: Hero
     id: hero
     weight: '2'
@@ -26,3 +26,4 @@ groups:
     weight: '5'
 map:
   hero_basic: hero
+  simple_content: simple
