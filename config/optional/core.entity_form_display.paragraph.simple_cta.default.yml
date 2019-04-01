@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.simple_cta.link
+    - paragraphs.paragraphs_type.simple_cta
+  module:
+    - link
+id: paragraph.simple_cta.default
+targetEntityType: paragraph
+bundle: simple_cta
+mode: default
+content:
+  link:
+    weight: 0
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true
