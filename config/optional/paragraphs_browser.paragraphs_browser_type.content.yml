@@ -28,4 +28,6 @@ groups:
     label: Simple
     id: simple
     weight: '6'
-map: {  }
+map:
+  link_default: link
+  link_file: link
