@@ -24,4 +24,5 @@ groups:
     label: Simple
     id: simple
     weight: '5'
-map: {  }
+map:
+  hero_basic: hero
