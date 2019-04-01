@@ -1,0 +1,34 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.simple_content.field_description
+    - field.field.paragraph.simple_content.field_heading
+    - paragraphs.paragraphs_type.simple_content
+  module:
+    - text
+id: paragraph.simple_content.default
+targetEntityType: paragraph
+bundle: simple_content
+mode: default
+content:
+  field_description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_heading:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

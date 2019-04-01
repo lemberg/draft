@@ -25,4 +25,5 @@ groups:
     id: simple
     weight: '5'
 map:
+  simple_content: simple
   simple_cta: simple
