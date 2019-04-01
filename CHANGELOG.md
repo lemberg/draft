@@ -1,4 +1,5 @@
 ## Draft 2.x.x
+- [Issue 53](https://github.com/lemberg/draft/issues/53) - Add Link Attributes widget module
 - [Issue 5](https://github.com/lemberg/draft/issues/5) - Add Environment Indicator module
 - [Issue 34](https://github.com/lemberg/draft/issues/34) - Add Paragraphs browser module
 - [Issue 32](https://github.com/lemberg/draft/issues/32) - Add default content types(Basic and Landing pages)
