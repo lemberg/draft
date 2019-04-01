@@ -45,6 +45,7 @@ install:
   - allowed_formats
   - environment_indicator
   - field_group
+  - focal_point
   - paragraphs
   - paragraphs_browser
   - twig_field_value

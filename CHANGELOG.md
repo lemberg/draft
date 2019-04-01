@@ -1,4 +1,5 @@
 ## Draft 2.x.x
+- [Issue 51](https://github.com/lemberg/draft/issues/51) - Add Focal Point module
 - [Issue 43](https://github.com/lemberg/draft/issues/43) - Add paragraph Simple - Content
 - [Issue 5](https://github.com/lemberg/draft/issues/5) - Add Environment Indicator module
 - [Issue 34](https://github.com/lemberg/draft/issues/34) - Add Paragraphs browser module
