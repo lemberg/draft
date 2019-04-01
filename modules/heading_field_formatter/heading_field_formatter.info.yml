@@ -1,0 +1,5 @@
+name: 'Heading Field Formatter'
+description: Implementation of the Draft Heading formatter
+type: module
+core: 8.x
+package: 'Draft'
