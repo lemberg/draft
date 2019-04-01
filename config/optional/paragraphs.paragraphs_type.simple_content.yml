@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: simple_content
+label: 'Simple - Content'
+icon_uuid: null
+description: 'Use to add Simple component with Heading and Description'
+behavior_plugins: {  }

@@ -31,3 +31,4 @@ groups:
 map:
   link_default: link
   link_file: link
+  simple_content: simple
