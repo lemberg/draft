@@ -17,6 +17,7 @@
         "drupal/link_attributes": "^1.5",
         "drupal/paragraphs": "^1.6",
         "drupal/paragraphs_browser": "^1.0@alpha",
+        "drupal/svg_image": "^1.9",
         "drupal/twig_field_value": "^1.2",
         "drupal/twig_tweak": "^2.1"
     },
