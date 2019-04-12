@@ -1,0 +1,3 @@
+icon_base_uri: 'public://config/media/icons'
+iframe_domain: ''
+oembed_providers_url: 'https://oembed.com/providers.json'

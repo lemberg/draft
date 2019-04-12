@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.link_file.alternate_link_text
+    - field.field.paragraph.link_file.file
+    - paragraphs.paragraphs_type.link_file
+id: paragraph.link_file.preview
+targetEntityType: paragraph
+bundle: link_file
+mode: preview
+content:
+  alternate_link_text:
+    type: string
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  file:
+    type: entity_reference_label
+    weight: 1
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden: {  }

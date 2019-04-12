@@ -1,0 +1,42 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hero_basic.field_description
+    - field.field.paragraph.hero_basic.field_heading
+    - field.field.paragraph.hero_basic.field_image
+    - image.style.hero_basic
+    - paragraphs.paragraphs_type.hero_basic
+  module:
+    - media
+    - text
+id: paragraph.hero_basic.default
+targetEntityType: paragraph
+bundle: hero_basic
+mode: default
+content:
+  field_description:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_heading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_image:
+    type: media_thumbnail
+    weight: 2
+    label: hidden
+    settings:
+      image_style: hero_basic
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

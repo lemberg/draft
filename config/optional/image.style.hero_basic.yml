@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: hero_basic
+label: 'Hero Basic(1440x500)'
+effects:
+  d6121c8f-dcea-4866-8925-aa6e267daf39:
+    uuid: d6121c8f-dcea-4866-8925-aa6e267daf39
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1440
+      height: 500
+      anchor: center-center
