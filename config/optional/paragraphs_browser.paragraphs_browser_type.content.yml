@@ -29,6 +29,7 @@ groups:
     id: simple
     weight: '6'
 map:
+  hero_basic: hero
   link_default: link
   link_file: link
   simple_content: simple
