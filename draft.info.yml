@@ -47,6 +47,7 @@ install:
   - allowed_formats
   - environment_indicator
   - field_group
+  - focal_point
   - link_attributes
   - paragraphs
   - paragraphs_browser
