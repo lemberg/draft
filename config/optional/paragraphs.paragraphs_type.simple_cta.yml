@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: simple_cta
+label: 'Simple - CTA'
+icon_uuid: null
+description: 'Use to add Simple CTA component with link'
+behavior_plugins: {  }

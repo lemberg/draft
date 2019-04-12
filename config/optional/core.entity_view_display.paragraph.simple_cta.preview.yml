@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.simple_cta.link
+    - paragraphs.paragraphs_type.simple_cta
+  module:
+    - link
+id: paragraph.simple_cta.preview
+targetEntityType: paragraph
+bundle: simple_cta
+mode: preview
+content:
+  link:
+    weight: 0
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }
