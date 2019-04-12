@@ -1,5 +1,9 @@
 ## Draft 2.x.x
 - [Issue 45](https://github.com/lemberg/draft/issues/45) - Add paragraph Hero - Basic
+- [Issue 51](https://github.com/lemberg/draft/issues/51) - Add Focal Point module
+- [Issue 53](https://github.com/lemberg/draft/issues/53) - Add Link Attributes widget module
+- [Issue 6](https://github.com/lemberg/draft/issues/6) - Add media bundles for Icon. Enable Svg Image module
+- [Issue 6](https://github.com/lemberg/draft/issues/6) - Add media bundles for Image and File since we use it on each site. Enable Media Library module
 - [Issue 43](https://github.com/lemberg/draft/issues/43) - Add paragraph Simple - Content
 - [Issue 5](https://github.com/lemberg/draft/issues/5) - Add Environment Indicator module
 - [Issue 34](https://github.com/lemberg/draft/issues/34) - Add Paragraphs browser module
