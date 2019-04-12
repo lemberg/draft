@@ -5,7 +5,7 @@ dependencies:
     - field.field.node.landing_page.components
     - node.type.landing_page
   module:
-    - paragraphs
+    - paragraphs_browser
     - path
 id: node.landing_page.default
 targetEntityType: node
@@ -13,15 +13,18 @@ bundle: landing_page
 mode: default
 content:
   components:
-    type: entity_reference_paragraphs
+    type: entity_reference_paragraphs_browser
     weight: 121
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
+      title: Component
+      title_plural: Components
+      edit_mode: preview
+      add_mode: paragraphs_browser
       form_display_mode: default
-      default_paragraph_type: ''
+      default_paragraph_type: _none
+      paragraphs_browser: content
+      modal_width: 80%
+      modal_height: auto
     third_party_settings: {  }
     region: content
   created:
