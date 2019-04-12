@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: hero_basic
+label: 'Hero - Basic'
+icon_uuid: null
+description: 'Use to add Hero component with Heading, Description and Background image'
+behavior_plugins: {  }
