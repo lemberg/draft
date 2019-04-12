@@ -4,5 +4,5 @@ dependencies: {  }
 id: link_file
 label: 'Link - File'
 icon_uuid: null
-description: ''
+description: 'Use to add default File component'
 behavior_plugins: {  }

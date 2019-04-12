@@ -16,7 +16,7 @@ groups:
     label: Layout
     id: layout
     weight: '3'
-  link:
+  links:
     label: Link
     id: link
     weight: '4'
@@ -30,6 +30,6 @@ groups:
     weight: '6'
 map:
   hero_basic: hero
-  link_default: link
-  link_file: link
+  link_default: links
+  link_file: links
   simple_content: simple
