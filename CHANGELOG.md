@@ -1,4 +1,5 @@
 ## Draft 2.x.x
+- [Issue 55](https://github.com/lemberg/draft/issues/55) - Add paragraphs Link - Default and Link - File
 - [Issue 45](https://github.com/lemberg/draft/issues/45) - Add paragraph Hero - Basic
 - [Issue 51](https://github.com/lemberg/draft/issues/51) - Add Focal Point module
 - [Issue 53](https://github.com/lemberg/draft/issues/53) - Add Link Attributes widget module
