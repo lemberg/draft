@@ -3,20 +3,37 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.compound_media_bar.media_order
+    - field.field.paragraph.compound_media_bar.media_position
     - field.field.paragraph.compound_media_bar.p_content_item
     - field.field.paragraph.compound_media_bar.p_media_item
     - paragraphs.paragraphs_type.compound_media_bar
   module:
     - entity_reference_revisions
+    - options
 id: paragraph.compound_media_bar.preview
 targetEntityType: paragraph
 bundle: compound_media_bar
 mode: preview
 content:
+  media_order:
+    type: list_default
+    weight: 2
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  media_position:
+    type: list_default
+    weight: 3
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
   p_content_item:
     type: entity_reference_revisions_entity_view
     weight: 1
-    label: hidden
+    label: above
     settings:
       view_mode: preview
       link: ''
@@ -25,7 +42,7 @@ content:
   p_media_item:
     type: entity_reference_revisions_entity_view
     weight: 0
-    label: hidden
+    label: above
     settings:
       view_mode: preview
       link: ''

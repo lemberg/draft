@@ -2,16 +2,46 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.compound_media_bar.media_order
+    - field.field.paragraph.compound_media_bar.media_position
     - field.field.paragraph.compound_media_bar.p_content_item
     - field.field.paragraph.compound_media_bar.p_media_item
     - paragraphs.paragraphs_type.compound_media_bar
   module:
+    - field_group
     - paragraphs_browser
+third_party_settings:
+  field_group:
+    group_settings:
+      children:
+        - media_position
+        - media_order
+      parent_name: ''
+      weight: 2
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: Settings
 id: paragraph.compound_media_bar.default
 targetEntityType: paragraph
 bundle: compound_media_bar
 mode: default
 content:
+  media_order:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  media_position:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   p_content_item:
     type: entity_reference_paragraphs_browser
     weight: 1

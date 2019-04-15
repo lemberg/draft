@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.media_order
+    - paragraphs.paragraphs_type.compound_media_bar
+  module:
+    - options
+id: paragraph.compound_media_bar.media_order
+field_name: media_order
+entity_type: paragraph
+bundle: compound_media_bar
+label: 'Media order'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: first
+default_value_callback: ''
+settings: {  }
+field_type: list_string
