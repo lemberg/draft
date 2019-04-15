@@ -1,0 +1,48 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.compound_media_bar.p_content_item
+    - field.field.paragraph.compound_media_bar.p_media_item
+    - paragraphs.paragraphs_type.compound_media_bar
+  module:
+    - paragraphs_browser
+id: paragraph.compound_media_bar.default
+targetEntityType: paragraph
+bundle: compound_media_bar
+mode: default
+content:
+  p_content_item:
+    type: entity_reference_paragraphs_browser
+    weight: 1
+    settings:
+      title: 'Content item'
+      title_plural: 'Content items'
+      edit_mode: preview
+      add_mode: paragraphs_browser
+      form_display_mode: default
+      default_paragraph_type: _none
+      paragraphs_browser: content
+      modal_width: 80%
+      modal_height: auto
+    third_party_settings: {  }
+    region: content
+  p_media_item:
+    type: entity_reference_paragraphs_browser
+    weight: 0
+    settings:
+      title: 'Media item'
+      title_plural: 'Media items'
+      edit_mode: preview
+      add_mode: paragraphs_browser
+      form_display_mode: default
+      default_paragraph_type: _none
+      paragraphs_browser: content
+      modal_width: 80%
+      modal_height: auto
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

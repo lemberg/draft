@@ -1,0 +1,34 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.compound_media_bar.p_content_item
+    - field.field.paragraph.compound_media_bar.p_media_item
+    - paragraphs.paragraphs_type.compound_media_bar
+  module:
+    - entity_reference_revisions
+id: paragraph.compound_media_bar.preview
+targetEntityType: paragraph
+bundle: compound_media_bar
+mode: preview
+content:
+  p_content_item:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: preview
+      link: ''
+    third_party_settings: {  }
+    region: content
+  p_media_item:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: preview
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }
