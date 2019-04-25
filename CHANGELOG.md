@@ -1,4 +1,5 @@
 ## Draft 2.x.x
+- [Issue 60](https://github.com/lemberg/draft/issues/60) - Add CKEDitor profiles
 - [Issue 46](https://github.com/lemberg/draft/issues/46) - Add paragraph Simple - CTA
 - [Issue 55](https://github.com/lemberg/draft/issues/55) - Add paragraphs Link - Default and Link - File
 - [Issue 45](https://github.com/lemberg/draft/issues/45) - Add paragraph Hero - Basic
