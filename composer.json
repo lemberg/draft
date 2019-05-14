@@ -39,7 +39,8 @@
         "patches": {
             "drupal/core": {
                 "Notice: Array to string conversion in Drupal\\Component\\Render\\PlainTextOutput::renderFromHtml()": "https://www.drupal.org/files/issues/2019-05-02/2663316-70.patch",
-                "Media library widget + Paragraphs broken: validation error on required field in paragraphs subform": "https://www.drupal.org/files/issues/2018-12-05/drupal-media-library-paragraphs-3003150-19-8.x.patch"
+                "Media library widget + Paragraphs broken: validation error on required field in paragraphs subform": "https://www.drupal.org/files/issues/2018-12-05/drupal-media-library-paragraphs-3003150-19-8.x.patch",
+                "Ajax Error when uploading new assets using Media Library module":"https://www.drupal.org/files/issues/2019-05-08/media_library_ajax_error-3053416-2.patch"
             }
         }
     }
