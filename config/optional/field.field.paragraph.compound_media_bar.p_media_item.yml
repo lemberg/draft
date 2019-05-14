@@ -1,0 +1,48 @@
+langcode: enfree-live-christmas-wallpaper-HD7.jpg
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.p_media_item
+    - paragraphs.paragraphs_type.compound_media_bar
+    - paragraphs.paragraphs_type.media_image
+  module:
+    - entity_reference_revisions
+id: paragraph.compound_media_bar.p_media_item
+field_name: p_media_item
+entity_type: paragraph
+bundle: compound_media_bar
+label: 'Media item'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      media_image: media_image
+    target_bundles_drag_drop:
+      compound_media_bar:
+        weight: 8
+        enabled: false
+      hero_basic:
+        weight: 9
+        enabled: false
+      link_default:
+        weight: 10
+        enabled: false
+      link_file:
+        weight: 11
+        enabled: false
+      media_image:
+        enabled: true
+        weight: 12
+      simple_content:
+        weight: 13
+        enabled: false
+      simple_cta:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

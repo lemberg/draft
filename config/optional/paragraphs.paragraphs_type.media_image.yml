@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: media_image
+label: 'Media - Image'
+icon_uuid: null
+description: 'Use to add Media Image component'
+behavior_plugins: {  }

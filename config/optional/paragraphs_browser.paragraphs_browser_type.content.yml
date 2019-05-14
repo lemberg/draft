@@ -8,7 +8,7 @@ groups:
     label: Compound
     id: compound
     weight: '1'
-  banner:
+  hero:
     label: Hero
     id: hero
     weight: '2'
@@ -16,13 +16,27 @@ groups:
     label: Layout
     id: layout
     weight: '3'
+  links:
+    label: Link
+    id: link
+    weight: '4'
+  media:
+    label: Media
+    id: media
+    weight: '5'
   reference:
     label: Reference
     id: reference
-    weight: '4'
+    weight: '6'
   simple:
     label: Simple
     id: simple
-    weight: '5'
+    weight: '7'
 map:
+  hero_basic: hero
+  link_default: links
+  link_file: links
   simple_content: simple
+  simple_cta: simple
+  compound_media_bar: compound
+  media_image: media

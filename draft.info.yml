@@ -23,6 +23,7 @@ dependencies:
   - drupal:image
   - drupal:link
   - drupal:media
+  - drupal:media_library
   - drupal:menu_link_content
   - drupal:menu_ui
   - drupal:node
@@ -35,6 +36,7 @@ dependencies:
   # Contrib
   - admin_toolbar:admin_toolbar
   - admin_toolbar:admin_toolbar_links_access_filter
+  - admin_toolbar:admin_toolbar_tools
   - adminimal_admin_toolbar:adminimal_admin_toolbar
   - config_split:config_split
   # @todo Indirect dependencies added here due to the issue in Drupal core @link
@@ -45,9 +47,12 @@ install:
   - allowed_formats
   - environment_indicator
   - field_group
+  - focal_point
   - heading_field_formatter
+  - link_attributes
   - paragraphs
   - paragraphs_browser
+  - svg_image
   - twig_field_value
   - twig_tweak
 themes:
