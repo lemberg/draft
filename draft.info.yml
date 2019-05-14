@@ -48,6 +48,7 @@ install:
   - environment_indicator
   - field_group
   - focal_point
+  - heading_field_formatter
   - link_attributes
   - paragraphs
   - paragraphs_browser
