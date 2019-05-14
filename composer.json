@@ -20,7 +20,8 @@
         "drupal/paragraphs_browser": "^1.0@alpha",
         "drupal/svg_image": "^1.9",
         "drupal/twig_field_value": "^1.2",
-        "drupal/twig_tweak": "^2.1"
+        "drupal/twig_tweak": "^2.1",
+        "drupal/ultimate_cron": "^2.0"
     },
     "require-dev": {
         "drupal/devel": "^2.0"
