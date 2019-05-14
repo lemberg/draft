@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: compound_media_bar
+label: 'Compound - Media Bar'
+icon_uuid: null
+description: 'Use to add Media Bar component with Media and Content items(you can set order and position for items)'
+behavior_plugins: {  }

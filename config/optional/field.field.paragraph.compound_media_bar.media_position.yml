@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.media_position
+    - paragraphs.paragraphs_type.compound_media_bar
+  module:
+    - options
+id: paragraph.compound_media_bar.media_position
+field_name: media_position
+entity_type: paragraph
+bundle: compound_media_bar
+label: 'Media position'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string
