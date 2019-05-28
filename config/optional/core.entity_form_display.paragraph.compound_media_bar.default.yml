@@ -25,6 +25,7 @@ third_party_settings:
         open: false
         required_fields: true
       label: Settings
+      region: content
 id: paragraph.compound_media_bar.default
 targetEntityType: paragraph
 bundle: compound_media_bar
