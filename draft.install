@@ -9,21 +9,13 @@ use Drupal\user\Entity\User;
  *
  * Performs tasks to set up the site for the Draft profile.
  *
- * @see install_tasks()
+ * @see hook_install_tasks()
  */
 function draft_install_tasks(&$install_state) {
   return [
     'draft_set_role' => [],
     'draft_config' => [],
   ];
-}
-
-/**
- * Prepares configs for the Draft profile.
- */
-function draft_config(&$install_state) {
-  $config = _draft_read_develop_config_split();
-  _draft_prepare_develop_config_split_directory($config);
 }
 
 /**
@@ -37,6 +29,14 @@ function draft_set_role(&$install_state) {
     $user->addRole($role->id());
     $user->save();
   }
+}
+
+/**
+ * Prepares configs for the Draft profile.
+ */
+function draft_config(&$install_state) {
+  $config = _draft_read_develop_config_split();
+  _draft_prepare_develop_config_split_directory($config);
 }
 
 /**
