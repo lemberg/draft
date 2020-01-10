@@ -55,5 +55,6 @@ install:
   - svg_image
   - twig_field_value
   - twig_tweak
+  - ultimate_cron
 themes:
   - adminimal_theme

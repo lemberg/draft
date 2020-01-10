@@ -1,4 +1,5 @@
 ## Draft 2.x.x
+- [Issue 63](https://github.com/lemberg/draft/issues/63) - Add Ultimate Cron module
 - [Issue 47](https://github.com/lemberg/draft/issues/47) - Add custom Heading field formatter module
 - [Issue 44](https://github.com/lemberg/draft/issues/44) - Add paragraph Compound - Media Bar
 - [Issue 46](https://github.com/lemberg/draft/issues/46) - Add paragraph Simple - CTA
