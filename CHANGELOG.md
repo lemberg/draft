@@ -1,4 +1,7 @@
 ## Draft 2.x.x
+- [Issue 75](https://github.com/lemberg/draft/issues/75) - Function 'file_prepare_directory' is deprecated
+- [Issue 71](https://github.com/lemberg/draft/issues/71) - Replace hook_install() with hook_install_tasks()
+- [Issue 70](https://github.com/lemberg/draft/issues/70) - Need update Admin Toolbar (Unsupported) to ^2.0 version
 - [Issue 47](https://github.com/lemberg/draft/issues/47) - Add custom Heading field formatter module
 - [Issue 44](https://github.com/lemberg/draft/issues/44) - Add paragraph Compound - Media Bar
 - [Issue 46](https://github.com/lemberg/draft/issues/46) - Add paragraph Simple - CTA
