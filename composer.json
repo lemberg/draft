@@ -7,7 +7,7 @@
     "prefer-stable": true,
     "require": {
         "php": ">=7.1",
-        "drupal/admin_toolbar": "^1.21",
+        "drupal/admin_toolbar": "^2.0",
         "drupal/adminimal_admin_toolbar": "^1.0",
         "drupal/adminimal_theme": "^1.0",
         "drupal/allowed_formats":  "^1.1",

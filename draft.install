@@ -2,19 +2,42 @@
 
 use Drupal\Core\Config\FileStorage;
 use Drupal\Core\File\FileSystemInterface;
+use Drupal\user\Entity\Role;
 use Drupal\user\Entity\User;
 
 /**
- * Implements hook_install().
+ * Implements hook_install_tasks().
+ *
+ * Performs tasks to set up the site for the Draft profile.
+ *
+ * @see hook_install_tasks()
  */
-function draft_install() {
+function draft_install_tasks(&$install_state) {
+  return [
+    'draft_set_role' => [],
+    'draft_config' => [],
+  ];
+}
+
+/**
+ * Sets a role to a user for the Draft profile.
+ */
+function draft_set_role(&$install_state) {
+  // Assign user 1 the "administrator" role.
+  $role = Role::load('administrator');
+  if ($role) {
+    $user = User::load(1);
+    $user->addRole($role->id());
+    $user->save();
+  }
+}
+
+/**
+ * Prepares configs for the Draft profile.
+ */
+function draft_config(&$install_state) {
   $config = _draft_read_develop_config_split();
   _draft_prepare_develop_config_split_directory($config);
-
-  // Assign user 1 the "administrator" role.
-  $user = User::load(1);
-  $user->roles[] = 'administrator';
-  $user->save();
 }
 
 /**
