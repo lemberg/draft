@@ -1,4 +1,7 @@
-## Draft 2.x.x
+## Draft 1.2.3, 2020-01-10
+- [Issue 83](https://github.com/lemberg/draft/issues/83) - Update php versions.
+
+## Draft 1.2.2, 2019-02-21
 - [Issue 7](https://github.com/lemberg/draft/issues/7) - Enable basic core modules(Custom block, CKEditor, Config, Contextual links, Dynamic page cache, Link, Media, Menu UI, Node, Options, Page cache, Path, Views) and add development modules (Views UI, Field UI, Update, Dblog) to the config split settings.
 - Updated composer.json to remove a drupal-support_project_module_format_dependencies-2855026-49.patch because it's already merged in the drupal core.
 - Disable anonymous account creation by default
