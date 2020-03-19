@@ -1,5 +1,6 @@
 ## Draft 1.x.x
 
+- Modernize Travis configuration
 - Updated composer.json to remove a drupal-support_project_module_format_dependencies-2855026-49.patch because it's already merged in the drupal core.
 - Disable anonymous account creation by default
 - Removed *Administration Links Access Filter* module as it has been [merged into Admin Toolbar as a submodule](https://www.drupal.org/project/admin_toolbar/issues/2919346) as of version 1.21.0

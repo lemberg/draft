@@ -1,45 +1,51 @@
-sudo: required
-dist: trusty
-language: php
+---
+version: ~> 1.0
+
+branches:
+  only:
+    - /^\d+\.x\.x$/
+    - /^\d+\.\d+\.\d+[-a-z0-9]*$/
+
+os: linux
+dist: xenial
+
+services:
+  - mysql
 
 cache:
-  apt: true
   directories:
     - "$HOME/.composer/cache"
     - "$HOME/.drush/cache"
+
+language: php
+
+jobs:
+  fast_finish: true
+
 php:
-  - 5.6
-  - 7.0
-  - 7.1
+  - 7.2
+  - 7.3
+  - 7.4
 
 before_install:
+  # Tweak PHP configuration.
   - phpenv config-rm xdebug.ini
-  - composer self-update
-  - composer --version
-
-install:
-  # Return to the Travis build directory.
-  - cd -
-  # Copy Travis composer.json to the build directory.
-  - cp ./lemberg/draft/.travis.composer.json ./composer.json
-  # Composer install should fail on bad patches.
-  - export COMPOSER_EXIT_ON_PATCH_FAILURE=1
+  - echo 'sendmail_path = /bin/true' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
   # Create the MySQL database and add a user for testing.
   - mysql -u root -e "CREATE DATABASE drupal; CREATE USER 'drupal'@'localhost' IDENTIFIED BY 'drupal'; GRANT ALL ON drupal.* TO 'drupal'@'localhost';"
-  # Tweak PHP configuration.
-  - echo 'sendmail_path = /bin/true' >> drupal.php.ini;
-  - phpenv config-add drupal.php.ini
-  - phpenv rehash
-  # Build the code base.
-  - composer install --no-interaction --no-progress --no-suggest
-  # Add Composer's local bin directory to the PATH.
-  - export PATH="$HOME/.composer/vendor/bin:$(readlink -e ./vendor/bin):$PATH"
-  # Installation profile must exist within drupal codebase. Symlink it.
-  - mkdir docroot/profiles
-  - ln -s $(readlink -e $TRAVIS_BUILD_DIR) docroot/profiles/draft
+
+install:
+  # Get back to the home directory.
+  - cd -
+  # Create a new Drupal project using the recommended-project template.
+  - composer create-project drupal/recommended-project project
+  - cd project
+  - composer config repositories.draft path $TRAVIS_BUILD_DIR
+  # Exit on patch failure.
+  - composer config extra.composer-exit-on-patch-failure true
+  - composer config extra.enable-patching true
+  - composer require drush/drush:^10
+  - composer require lemberg/draft @dev
 
 script:
-  - drush site-install --db-url=mysql://drupal:drupal@localhost/drupal --account-name=admin --account-pass=admin -r ./docroot --yes
-
-matrix:
-  fast_finish: true
+  - ./vendor/bin/drush site-install --db-url=mysql://drupal:drupal@localhost/drupal --account-name=admin --account-pass=admin -root ./docroot --yes
