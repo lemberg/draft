@@ -36,16 +36,16 @@ before_install:
 
 install:
   # Get back to the home directory.
-  - cd -
+  - cd $TRAVIS_HOME
   # Create a new Drupal project using the recommended-project template.
   - composer create-project drupal/recommended-project project
   - cd project
   - composer config repositories.draft path $TRAVIS_BUILD_DIR
-  # Exit on patch failure.
   - composer config extra.composer-exit-on-patch-failure true
   - composer config extra.enable-patching true
+  - composer require zaporylie/composer-drupal-optimizations:^1.1 --dev
   - composer require drush/drush:^10
   - composer require lemberg/draft @dev
 
 script:
-  - ./vendor/bin/drush site-install --db-url=mysql://drupal:drupal@localhost/drupal --account-name=admin --account-pass=admin -root ./docroot --yes
+  - ./vendor/bin/drush site:install --db-url=mysql://drupal:drupal@localhost/drupal --account-name=admin --account-pass=admin -root ./web --yes
