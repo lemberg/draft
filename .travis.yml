@@ -48,4 +48,4 @@ install:
   - composer require lemberg/draft @dev
 
 script:
-  - ./vendor/bin/drush site:install --db-url=mysql://drupal:drupal@localhost/drupal --account-name=admin --account-pass=admin -root ./web --yes
+  - ./vendor/bin/drush site:install draft --db-url=mysql://drupal:drupal@localhost/drupal --account-name=admin --account-pass=admin --root ./web --yes
