@@ -5,7 +5,8 @@
     * [Adminimal - Responsive Administration Theme](https://www.drupal.org/project/adminimal_theme) (drupal/adminimal_theme: **^1.5**)
     * [Adminimal Admin Toolbar](https://www.drupal.org/project/adminimal_admin_toolbar) (drupal/adminimal_admin_toolbar: **^1.10**)
     * [Configuration Split](https://www.drupal.org/project/config_split) (drupal/config_split: **^1.5**)
-- [GH-80](https://github.com/lemberg/draft/issues/80) - Use forked version of `consolidation/comments`: `t2l/comments`
+- [GH-80](https://github.com/lemberg/draft/issues/80) - Replaced deprecated `file_prepare_directory()` with `\Drupal::service('file_system')->prepareDirectory()`
+- [GH-79](https://github.com/lemberg/draft/issues/79) - Replaced `hook_install()` with `hook_install_tasks()` so profile can be installed from the configuration
 - Modernize Travis configuration
 - Updated composer.json to remove a drupal-support_project_module_format_dependencies-2855026-49.patch because it's already merged in the drupal core.
 - Disable anonymous account creation by default
@@ -30,7 +31,7 @@
     * Configuration Split (config_split:config_split)
 - Added vendor libraries:
     * Administration Links Access Filter (drupal/admin_links_access_filter: **^1.0**)
-    * Configuration Split (drupal/admin_links_access_filter: **^1.0**)
+    * Configuration Split (drupal/config_split: **^1.0**)
     * Drupal Console (drupal/console: **^1.0**)
     * Drush (drush/drush: **^8.1**)
 - Make sure that all dependencies are prefixed with the project name
