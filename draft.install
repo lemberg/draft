@@ -3,9 +3,20 @@
 use Drupal\Core\Config\FileStorage;
 
 /**
- * Implements hook_install().
+ * Implements hook_install_tasks().
  */
-function draft_install() {
+function draft_install_tasks(array &$install_state) {
+  return [
+    'draft_prepare_develop_config_split_directory' => [
+      'display' => FALSE,
+    ],
+  ];
+}
+
+/**
+ * Prepares configs for the Draft profile.
+ */
+function draft_prepare_develop_config_split_directory(array &$install_state) {
   $config = _draft_read_develop_config_split();
   _draft_prepare_develop_config_split_directory($config);
 }
