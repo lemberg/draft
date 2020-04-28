@@ -6,10 +6,10 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "drupal/admin_toolbar": "^1.21",
-        "drupal/adminimal_admin_toolbar": "^1.0",
-        "drupal/adminimal_theme": "^1.0",
-        "drupal/config_split": "^1.0"
+        "drupal/admin_toolbar": "^2.2",
+        "drupal/adminimal_admin_toolbar": "^1.10",
+        "drupal/adminimal_theme": "^1.5",
+        "drupal/config_split": "^1.4"
     },
     "repositories": [
         {
