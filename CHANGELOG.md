@@ -1,5 +1,10 @@
 ## Draft 1.x.x
 
+- [GH-92](https://github.com/lemberg/draft/issues/92) - Updated vendor libraries:
+    * [Admin Toolbar](https://www.drupal.org/project/admin_toolbar) (drupal/admin_toolbar: **^2.2**)
+    * [Adminimal - Responsive Administration Theme](https://www.drupal.org/project/adminimal_theme) (drupal/adminimal_theme: **^1.5**)
+    * [Adminimal Admin Toolbar](https://www.drupal.org/project/adminimal_admin_toolbar) (drupal/adminimal_admin_toolbar: **^1.10**)
+    * [Configuration Split](https://www.drupal.org/project/config_split) (drupal/config_split: **^1.5**)
 - [GH-80](https://github.com/lemberg/draft/issues/80) - Use forked version of `consolidation/comments`: `t2l/comments`
 - Modernize Travis configuration
 - Updated composer.json to remove a drupal-support_project_module_format_dependencies-2855026-49.patch because it's already merged in the drupal core.
