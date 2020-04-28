@@ -1,5 +1,6 @@
 ## Draft 1.x.x
 
+- [GH-80](https://github.com/lemberg/draft/issues/80) - Use forked version of `consolidation/comments`: `t2l/comments`
 - Modernize Travis configuration
 - Updated composer.json to remove a drupal-support_project_module_format_dependencies-2855026-49.patch because it's already merged in the drupal core.
 - Disable anonymous account creation by default
