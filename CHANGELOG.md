@@ -1,4 +1,4 @@
-## Draft 1.x.x
+## Draft 1.3.0, 2020-04-28
 
 - [GH-92](https://github.com/lemberg/draft/issues/92) - Updated vendor libraries:
     * [Admin Toolbar](https://www.drupal.org/project/admin_toolbar) (drupal/admin_toolbar: **^2.2**)
