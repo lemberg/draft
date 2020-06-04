@@ -2,7 +2,7 @@
     "name": "lemberg/draft",
     "description": "Draft handcrafted Drupal",
     "type": "drupal-profile",
-    "license": "GPL-2.0+",
+    "license": "GPL-2.0-or-later",
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
@@ -14,8 +14,5 @@
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         }
-    ],
-    "config": {
-        "bin-dir": "bin/"
-    }
+    ]
 }
