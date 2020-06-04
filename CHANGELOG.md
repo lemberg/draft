@@ -1,3 +1,9 @@
+## Draft 1.x.x (Unreleased)
+
+- [GH-95](https://github.com/lemberg/draft/issues/95) - Replaced Adminimal contrib theme with Claro core theme, thus removed the following vendor packages:
+    * [Adminimal - Responsive Administration Theme](https://www.drupal.org/project/adminimal_theme) (drupal/adminimal_theme)
+    * [Adminimal Admin Toolbar](https://www.drupal.org/project/adminimal_admin_toolbar) (drupal/adminimal_admin_toolbar)
+
 ## Draft 1.3.0, 2020-04-28
 
 - [GH-92](https://github.com/lemberg/draft/issues/92) - Updated vendor libraries:
