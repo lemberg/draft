@@ -16,7 +16,6 @@ dependencies:
   # Contrib
   - admin_toolbar:admin_toolbar
   - admin_toolbar:admin_toolbar_links_access_filter
-  - adminimal_admin_toolbar:adminimal_admin_toolbar
   - config_split:config_split
   # @todo Indirect dependencies added here due to the issue in Drupal core @link
   # https://www.drupal.org/node/1253774 @endlink. Remove when the corresponding
@@ -24,4 +23,4 @@ dependencies:
   - config_filter:config_filter
 
 themes:
-  - adminimal_theme
+  - claro
