@@ -21,11 +21,17 @@ language: php
 
 jobs:
   fast_finish: true
-
-php:
-  - 7.2
-  - 7.3
-  - 7.4
+  include:
+  - php: 7.2
+    env: DRUPAL_CORE=^8.9
+  - php: 7.3
+    env: DRUPAL_CORE=^8.9
+  - php: 7.4
+    env: DRUPAL_CORE=^8.9
+  - php: 7.3
+    env: DRUPAL_CORE=^9.0
+  - php: 7.4
+    env: DRUPAL_CORE=^9.0
 
 before_install:
   # Tweak PHP configuration.
@@ -38,7 +44,7 @@ install:
   # Get back to the home directory.
   - cd $TRAVIS_HOME
   # Create a new Drupal project using the recommended-project template.
-  - composer create-project drupal/recommended-project project
+  - composer create-project drupal/recommended-project:$DRUPAL_CORE project
   - cd project
   - composer config repositories.draft path $TRAVIS_BUILD_DIR
   - composer config extra.composer-exit-on-patch-failure true
