@@ -1,4 +1,4 @@
-## Draft 1.x.x (Unreleased)
+## Draft 1.4.0, 2020-06-04
 
 - [GH-96](https://github.com/lemberg/draft/issues/96) - Made the project D9 compatible, updated the following vendor packages:
     * [Configuration Split](https://www.drupal.org/project/config_split) (drupal/config_split: **^1.5**)
