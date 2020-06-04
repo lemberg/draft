@@ -1,5 +1,7 @@
 ## Draft 1.x.x (Unreleased)
 
+- [GH-96](https://github.com/lemberg/draft/issues/96) - Made the project D9 compatible, updated the following vendor packages:
+    * [Configuration Split](https://www.drupal.org/project/config_split) (drupal/config_split: **^1.5**)
 - [GH-95](https://github.com/lemberg/draft/issues/95) - Replaced Adminimal contrib theme with Claro core theme, thus removed the following vendor packages:
     * [Adminimal - Responsive Administration Theme](https://www.drupal.org/project/adminimal_theme) (drupal/adminimal_theme)
     * [Adminimal Admin Toolbar](https://www.drupal.org/project/adminimal_admin_toolbar) (drupal/adminimal_admin_toolbar)
@@ -10,7 +12,7 @@
     * [Admin Toolbar](https://www.drupal.org/project/admin_toolbar) (drupal/admin_toolbar: **^2.2**)
     * [Adminimal - Responsive Administration Theme](https://www.drupal.org/project/adminimal_theme) (drupal/adminimal_theme: **^1.5**)
     * [Adminimal Admin Toolbar](https://www.drupal.org/project/adminimal_admin_toolbar) (drupal/adminimal_admin_toolbar: **^1.10**)
-    * [Configuration Split](https://www.drupal.org/project/config_split) (drupal/config_split: **^1.5**)
+    * [Configuration Split](https://www.drupal.org/project/config_split) (drupal/config_split: **^1.4**)
 - [GH-80](https://github.com/lemberg/draft/issues/80) - Replaced deprecated `file_prepare_directory()` with `\Drupal::service('file_system')->prepareDirectory()`
 - [GH-79](https://github.com/lemberg/draft/issues/79) - Replaced `hook_install()` with `hook_install_tasks()` so profile can be installed from the configuration
 - Modernize Travis configuration
