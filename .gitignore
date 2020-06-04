@@ -1,5 +1,2 @@
-# Ignore binaries.
-/bin
-
 # Ignore Composer-managed dependencies.
 vendor/
