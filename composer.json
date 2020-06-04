@@ -7,7 +7,7 @@
     "prefer-stable": true,
     "require": {
         "drupal/admin_toolbar": "^2.2",
-        "drupal/config_split": "^1.4"
+        "drupal/config_split": "^1.5"
     },
     "repositories": [
         {
