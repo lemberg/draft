@@ -1,3 +1,8 @@
+## Draft 1.4.1, 2020-06-05
+
+- [GH-101](https://github.com/lemberg/draft/issues/101) - Add missing dependency on drupal/core-recommended to the composer.json and support Drupal 8.8
+
+
 ## Draft 1.4.0, 2020-06-04
 
 - [GH-96](https://github.com/lemberg/draft/issues/96) - Made the project D9 compatible, updated the following vendor packages:
