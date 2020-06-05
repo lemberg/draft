@@ -1,7 +1,10 @@
+## Draft 1.x.x (Unreleases)
+
+- [GH-103](https://github.com/lemberg/draft/issues/103) - Replace `drupal/core-recommended` with `drupal/core` as this must be a project-level decision
+
 ## Draft 1.4.1, 2020-06-05
 
 - [GH-101](https://github.com/lemberg/draft/issues/101) - Add missing dependency on drupal/core-recommended to the composer.json and support Drupal 8.8
-
 
 ## Draft 1.4.0, 2020-06-04
 
