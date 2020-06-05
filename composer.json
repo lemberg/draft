@@ -8,7 +8,7 @@
     "require": {
         "drupal/admin_toolbar": "^2.2",
         "drupal/config_split": "^1.5",
-        "drupal/core-recommended": "^8.8 || ^9.0"
+        "drupal/core": "^8.8 || ^9.0"
     },
     "repositories": [
         {
