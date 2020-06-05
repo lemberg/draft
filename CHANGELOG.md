@@ -1,4 +1,4 @@
-## Draft 1.x.x (Unreleases)
+## Draft 1.4.2, 2020-06-05
 
 - [GH-103](https://github.com/lemberg/draft/issues/103) - Replace `drupal/core-recommended` with `drupal/core` as this must be a project-level decision
 

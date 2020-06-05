@@ -2,7 +2,7 @@ name: Draft
 core_version_requirement: ^8.8 || ^9.0
 type: profile
 description: Draft handcrafted Drupal.
-version: 1.4.1
+version: 1.4.2
 distribution:
   name: Draft
 
