@@ -1,6 +1,6 @@
 # Draft Drupal
 
-[![Build Status](https://travis-ci.org/lemberg/draft.svg?branch=1.x.x)](https://travis-ci.org/lemberg/draft)
+[![Build Status](https://travis-ci.org/lemberg/draft.svg?branch=1.4.1)](https://travis-ci.org/lemberg/draft)
 
 This is fresh handcrafted Drupal profile.
 
