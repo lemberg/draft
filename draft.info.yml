@@ -1,5 +1,5 @@
 name: Draft
-core_version_requirement: ^8.9 || ^9.0
+core_version_requirement: ^8.8 || ^9.0
 type: profile
 description: Draft handcrafted Drupal.
 version: 1.4.0
